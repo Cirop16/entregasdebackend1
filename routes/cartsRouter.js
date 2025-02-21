@@ -1,8 +1,15 @@
 import { Router } from 'express';
 import { readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+
+//tratando de solucionar problemas 1
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url'
 
 const router = Router();
+
+//tratando de solucionar problemas 2
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const cartsFilePath = join(__dirname, '../carrito.json');
 

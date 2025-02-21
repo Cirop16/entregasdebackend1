@@ -1,0 +1,15 @@
+<h1>¡Bienvenido al simulador para la clase!</h1>
+
+<h2>¡Hola, <span id="username-display"></span>!</h2>
+
+<div>
+    <input id="productBox">
+</div>
+
+<div>
+    <p id="productsLogs"></p>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/index.js"></script>
